@@ -8,7 +8,7 @@ Tag for each version of kedro eg[0.17.6, 0.17.7, 0.18.1]
 
 ```mermaid
 %%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': false,'showCommitLabel': false}} }%%
-      gitGraph
+      gitgraph
         commit
         branch hotfix
         checkout hotfix
