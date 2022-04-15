@@ -1,9 +1,10 @@
 from kedro.pipeline import pipeline, node
+from kedro.pipeline.modular_pipeline import pipeline
 
 from .nodes import create_model_input_table, preprocess_companies, preprocess_shuttles
 
 
-def create_pipeline(**kwargs):
+def create_pipeline(**kwargs) -> pipeline:
     return pipeline(
         [
             node(
@@ -24,5 +25,8 @@ def create_pipeline(**kwargs):
                 outputs="model_input_table",
                 name="create_model_input_table_node",
             ),
-        ]
+        ],
+        namespace="data_processing",
+        inputs=["companies", "shuttles", "reviews"],
+        outputs="model_input_table",
     )

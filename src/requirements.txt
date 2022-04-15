@@ -194,7 +194,7 @@ jupyterlab-server==2.12.0
     # via jupyterlab
 jupyterlab-widgets==1.1.0
     # via ipywidgets
-kedro[pandas.csvdataset,pandas.exceldataset]==0.17.7
+kedro[pandas.csvdataset,pandas.exceldataset,pandas.parquetdataset]==0.17.7
     # via
     #   -r src/requirements.in
     #   kedro-telemetry
@@ -253,6 +253,7 @@ notebook-shim==0.1.0
 numpy==1.22.3
     # via
     #   pandas
+    #   pyarrow
     #   scikit-learn
     #   scipy
 openpyxl==3.0.9
@@ -308,6 +309,8 @@ ptyprocess==0.7.0
     #   terminado
 py==1.11.0
     # via pytest
+pyarrow==6.0.1
+    # via kedro
 pycodestyle==2.7.0
     # via flake8
 pycparser==2.21
@@ -378,7 +381,7 @@ requests==2.25.1
     #   kedro-telemetry
 rope==0.21.1
     # via kedro
-scikit-learn
+scikit-learn==1.0.2
     # via -r src/requirements.in
 scipy==1.8.0
     # via scikit-learn
