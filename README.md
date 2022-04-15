@@ -24,4 +24,6 @@ The image below shows how I plan to add tags.
 1. 
 
 ## V0.17.7
+1. Add name spacing to both data processing & data science pipelines
+2. Two sub pipelines in data science pipelines
 

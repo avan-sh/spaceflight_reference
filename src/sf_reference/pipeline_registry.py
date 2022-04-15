@@ -1,13 +1,13 @@
 """Project pipelines."""
 from typing import Dict
 
-from kedro.pipeline import Pipeline
+from kedro.pipeline import pipeline
 
 from sf_reference.pipelines import data_processing as dp
 from sf_reference.pipelines import data_science as ds
 
 
-def register_pipelines() -> Dict[str, Pipeline]:
+def register_pipelines() -> Dict[str, pipeline]:
     """Register the project's pipelines.
 
     Returns:

@@ -1,7 +1,7 @@
 [tool.kedro]
 package_name = "sf_reference"
 project_name = "sf_reference"
-project_version = "0.17.6"
+project_version = "0.17.7"
 
 [tool.isort]
 multi_line_output = 3
