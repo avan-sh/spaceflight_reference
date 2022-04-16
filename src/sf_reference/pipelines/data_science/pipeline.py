@@ -1,5 +1,4 @@
 from kedro.pipeline import pipeline, node
-from kedro.pipeline.modular_pipeline import pipeline
 
 from .nodes import evaluate_model, split_data, train_model
 
